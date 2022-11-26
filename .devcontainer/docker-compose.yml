@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  workspace:
+    build:
+      dockerfile: .devcontainer/Dockerfile
+    command: sleep infinity
+    volumes:
+      - python-bashhistory:/commandhistory
+      - .:/workspace:cached
+    env_file: .env
+
+volumes:
+  python-bashhistory:

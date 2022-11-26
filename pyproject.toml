@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pydev"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pre-commit = "^2.20.0"
+fastapi = "^0.87.0"
+uvicorn = "^0.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

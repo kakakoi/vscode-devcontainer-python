@@ -1,0 +1,41 @@
+{
+	"name": "Python 3",
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+		"docker-compose.yml"
+	],
+	"service": "workspace",
+	"workspaceFolder": "/workspace",
+	"settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+		"python.defaultInterpreterPath": "/usr/local/bin/python",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+		"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+		"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+		"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+		"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+		"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+		"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+		"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+		"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint"
+	},
+	"remoteUser": "vscode",
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"GitHub.copilot",
+		"eamodio.gitlens",
+		"mechatroner.rainbow-csv",
+		"adpyke.vscode-sql-formatter",
+		"streetsidesoftware.code-spell-checker"
+	],
+	"features": {
+        "github-cli": "latest",
+		"docker-from-docker": {
+			"version": "latest"
+		}
+	},
+	"postCreateCommand": "sudo bash ./.devcontainer/postCreateCommand.sh"
+}

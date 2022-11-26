@@ -1,0 +1,16 @@
+# python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache
+
+# dev
+test.db
+.coverage
+.venv
+.envrc
+.tox
+*.src*
+postgres/
+pgadmin/
+.gitconfig

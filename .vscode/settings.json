@@ -1,0 +1,24 @@
+{
+    "python.formatting.provider": "black",
+    "[python]": {
+      "editor.defaultFormatter": null,
+      "editor.formatOnSave": true
+    },
+    "python.formatting.blackArgs": [
+      "--line-length=127"
+    ],
+    "python.analysis.extraPaths": [
+      "${workspaceFolder}/.venv/lib/python3.9/site-packages",
+      "${workspaceFolder}/app",
+    ],
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+      "--max-line-length=127",
+      "--ignore=E203,W503,W504,W292",
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+  }
